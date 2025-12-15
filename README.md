@@ -25,7 +25,7 @@ To build and compare classification models for identifying fraudulent transactio
 To evaluate model performance using appropriate metrics for imbalanced data, such as precision, recall, F1-score, and ROC-AUC.
 
 To assess the trade-off between false positives and false negatives in order to select a model that minimizes expected loss.
-# Data Understanding & Challenges
+# DATA UNDERSTANDING AND CHALLENGES
 The credit card fraud dataset provides a snapshot of credit card transactions made by European cardholders over two days in September 2013.
 # Key Characteristics:
 * Number of transactions: 284,807 (after initial cleaning).
@@ -39,7 +39,7 @@ The credit card fraud dataset provides a snapshot of credit card transactions ma
 Methodology & Technical Approach
 The entire analysis is contained within the Notebook.
 
-# Preprocessing & Imbalance Handling
+# PREPROCESSING AND IMBALANCE HANDLING
 Data Splitting: Stratified train-test split performed before any scaling or resampling to prevent data leakage.
 
 Scaling: Time and Amount features were standardized (using StandardScaler).
@@ -52,12 +52,12 @@ Imbalance Techniques Compared:
 
 * Random Undersampling (Random Forest)
 
-# Model Comparison
+# MODEL COMPARISON
  The following models were trained and benchmarked across different resampling techniques:
  * Logistic Regression
  * Random Forest Classifier
  * XGBoost Classifier
  * LightGBM Classifier (The typically best performer)
-# Optimization Goal
+# OPTIMIZATION GOAL
 * Primary Metric: The final model selection and tuning was optimized to maximize the Area Under the ROC Curve (ROC-AUC).
 * Tuning Method: $\text{RandomizedSearchCV}$ was applied to the best model to find optimal hyperparameters (e.g., n_estimators, num_leaves, learning_rate).
