@@ -13,6 +13,7 @@ How can transaction data be used to accurately detect credit card fraud while mi
 Financial institutions face significant losses from credit card fraud while also incurring costs from incorrectly blocking legitimate transactions. Existing fraud detection approaches often struggle to balance these competing risks, resulting in either missed fraud or unnecessary customer disruption. This project aims to develop a data-driven classification model that identifies fraudulent transactions and minimizes overall expected loss by balancing false positives and false negatives.
 # OBJECTIVES
 General Objective: To develop a data-driven fraud detection model that accurately identifies fraudulent credit card transactions while minimizing overall financial loss and customer disruption.
+<img width="750" height="500" alt="image" src="https://github.com/user-attachments/assets/a35c1cc6-295f-4a4f-867a-f6dcfed7c1ed" />
 
 # Specific Objectives:
 
