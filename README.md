@@ -7,19 +7,27 @@ Fraud is a dynamic, adversarial problem. Traditional rule-based systems often fa
 
 * **Customer Insult:** Overly aggressive security filters block legitimate transactions, leading to "cart abandonment" and long-term brand damage.
 
-**Stakeholders & Utilization**
-* **Risk Management Executives:** Use this report to justify the shift from "Accuracy" metrics to "Financial Loss Mitigation" (F2-Score).
-
-* **Data Engineering Teams:** Utilize the Feature Importance insights to prioritize the health and low-latency delivery of the top 5 predictive variables.
-
-* **Customer Support:** Benefit from a higher "Alert Precision," reducing the volume of calls from frustrated customers with blocked cards.
-
 This is the guiding question:
 
 **How can transaction data be used to accurately detect credit card fraud while minimizing financial loss and customer disruption?**
 
+# STAKEHOLDERS
+The beneficiaries of this project are:
+
+* Financial Institutions (Banks & Card issuers)
+* Cardholders (Customers)
+* Payment Networks (e.g., Visa, Mastercard)
+* Fraud Operations & Risk Management Teams
+* Customer Support & Call Centers
+* Regulators & Compliance Bodies
+* Merchants
+* Data Scientists & Analysts
+* Executive Management
+At the center of these stakeholders are everyday cardholders and merchants, whose trust, financial security, and ability to transact smoothly depend on effective and balanced fraud detection systems.
+
 # OBJECTIVES
-General Objective: To develop a data-driven fraud detection model that accurately identifies fraudulent credit card transactions while minimizing overall financial loss and customer disruption.
+# General Objective:
+To develop a data-driven fraud detection model that accurately identifies fraudulent credit card transactions while minimizing overall financial loss and customer disruption.
 
 # Specific Objectives:
 
@@ -93,6 +101,16 @@ In a $100 transaction, missing a fraud case costs the bank $100. A false alarm c
 **Implications**
 
 By deploying this model at the $0.35$ threshold, the bank can expect to capture 11% more fraud than a standard $0.50$ threshold. The operational team will find that ~8 out of 10 alerts they investigate are genuine fraud, representing a massive increase in labor efficiency.
+# RECOMMENDATIONS
+* **Deploy a Tiered Response System:** Use the 0.35 threshold to trigger real-time MFA for suspicious cases and a 0.75 threshold to auto-block high-confidence fraud.
 
+* **Monitor Top Fraud Signals:** Track features V14, V10, and V4 for "data drift" to detect changes in criminal behavior as they happen.
+
+* **Establish a Feedback Loop:** Automatically feed verified fraud outcomes back into the training pipeline to keep the model updated.
+
+* **Schedule Monthly Retraining**: Update the model every 30 days using SMOTE on the latest data to ensure it remains resilient against evolving tactics.
 # CONCLUSION
 This project demonstrates that in highly imbalanced environments like fraud detection, Accuracy is a vanity metric. By shifting the focus to PR-AUC and optimizing the F2-Score, we created a model that is mathematically tuned to the bank's actual risk appetite. The final Random Forest model provides a robust defense that catches nearly 90% of fraudulent activity while ensuring that the vast majority of legitimate customers never experience a false decline.
+
+# FOR MORE INFORMATION
+contact me at mwendemichelle4@gmail.com
