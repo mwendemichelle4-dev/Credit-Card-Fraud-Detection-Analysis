@@ -42,7 +42,8 @@ To develop a data-driven fraud detection model that accurately identifies fraudu
 * To assess the trade-off between false positives and false negatives in order to select a model that minimizes expected loss.
 # DATA UNDERSTANDING AND CHALLENGES
 **Data Source & Suitability**
-The dataset represents 48 hours of European credit card transactions. It is uniquely suitable because it captures the Extremely Imbalanced Class Distribution inherent in financial crime, providing a realistic testing ground for anomaly detection.
+
+The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/isaikumar/creditcardfraud), it represents 48 hours of European credit card transactions. It is uniquely suitable because it captures the Extremely Imbalanced Class Distribution inherent in financial crime, providing a realistic testing ground for anomaly detection.
 # Key Characteristics:
 * Number of transactions: 284,807 (after initial cleaning).
 * Fraudulent transactions: 492 ($\approx 0.17\%$ of total), highlighting extreme class imbalance.
